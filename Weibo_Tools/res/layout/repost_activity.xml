@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/show_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转发内容"
+        android:textSize="20dp" >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/addrepost_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你要添加的内容" >
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/repost_checkpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同时评论原微博" />
+
+        <Button
+            android:id="@+id/btn_repost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转发" />
+
+    </LinearLayout>
+
+</LinearLayout>

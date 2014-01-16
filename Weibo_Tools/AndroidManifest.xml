@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jayvee.weibo_tools"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="jayvee.weibo.data.ShareData"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/LoginActivityName" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="jayvee.weibo.timeline.TimelineListActivity"
+            android:label="@string/TimelineActivityName" >
+        </activity>
+                <activity
+            android:name="jayvee.weibo.timeline.UserTimelineListActivity"
+            android:label="@string/UserTimelineActivityName" >
+        </activity>
+        <activity
+            android:hardwareAccelerated="false"
+            android:name="jayvee.weibo.status_detail.StatusDetailActivity"
+            android:label="@string/StatusDetailActivityName" >
+        </activity>
+        <activity
+            android:name="jayvee.weibo.status_detail.RepostActivity"
+            android:label="@string/RepostActivityName" >
+        </activity>
+        <activity
+            android:name="jayvee.weibo.status_detail.ReplyActivity"
+            android:label="@string/ReplyActivityName" >
+        </activity>
+        <activity
+            android:name="jayvee.weibo.status_detail.CommentActivity"
+            android:label="@string/CommentActivityName" >
+        </activity>
+        
+    </application>
+
+</manifest>
