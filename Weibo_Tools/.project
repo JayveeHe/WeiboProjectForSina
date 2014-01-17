@@ -3,6 +3,7 @@
 	<name>Weibo_Tools</name>
 	<comment></comment>
 	<projects>
+		<project>WeiboSDK</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
